@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kael's Handmade</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="produk.css">
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: #ffffff;
+        overflow-x: hidden;
+        background: linear-gradient(to bottom, #ffffff, #b5dbff);
+    }
+
+    /* NAVBAR */
+    .navbar {
+        padding: 14px 22px;
+        background: #ffffff;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    }
+
+    a.nav-link.fs-sm-20.active {
+        color: #2d4a80 !important;
+    }
+
+    a.nav-link.fs-sm-20.active::after {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 4px;
+        background-color: #b5dbff;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-left: 0px;
+        border-radius: 20px;
+    }
+
+    .btn-order {
+        background: #4a7ce8;
+        color: white !important;
+        padding: 8px 18px;
+        border-radius: 50px;
+        font-weight: 600;
+        box-shadow: 0 6px 20px rgba(232, 91, 74, 0.18);
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .btn-order:hover {
+        transform: translateY(-2px);
+    }
+
+    .color-dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 2px solid #ddd;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .color-dot:hover {
+        transform: scale(1.1);
+    }
+
+    .btn-whatsapp {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: #25D366;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 50px;
+        font-weight: 600;
+        border: none;
+        text-decoration: none;
+        box-shadow: 0 10px 24px rgba(37, 211, 102, .3);
+    }
+
+    .btn-whatsapp:hover {
+        transform: translateY(-2px);
+        color: #fff;
+    }
+
+    /* SCROLL ANIMATION */
+    .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.9s cubic-bezier(.22, 1, .36, 1);
+    }
+
+    .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar container rounded-5 mt-4 navbar-expand-lg fixed-top">
+        <a class="navbar-brand fw-bold" href="#">Kael's Handmade</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto me-3 fw-semibold">
+                <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link fs-sm-20 active" href="produk.html">Produk</a></li>
+                <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang Penjual</a></li>
+            </ul>
+            <a href="produk.html" class="btn-order">Order Sekarang</a>
+        </div>
+    </nav>
+
+    <section class="container reveal py-5" style="margin-top:140px">
+
+        <div class="row g-5">
+
+            <!-- LEFT IMAGE -->
+            <div class="col-lg-6">
+                <div class="border rounded-4 overflow-hidden shadow-sm">
+                    <img src="https://i.pinimg.com/1200x/ab/a1/c1/aba1c183a5426b14249d3b0611fa1517.jpg" alt=""
+                        class="w-100" style="object-fit:cover;">
+                </div>
+            </div>
+
+            <!-- RIGHT INFO -->
+            <div class="col-lg-6">
+
+                <h2 class="fw-bold">Keychain Nama Beads</h2>
+                <h4 class="text-primary fw-semibold mt-2">Rp 30.000</h4>
+
+                <p class="mt-3 text-secondary">
+                    Strap phone handmade dengan material berkualitas, nyaman digunakan dan cocok untuk semua tipe HP.
+                    Desain simple dengan sentuhan warna pastel yang estetik.
+                </p>
+
+                <!-- Rating -->
+                <div class="d-flex align-items-center mb-3">
+                    <div class="text-warning me-2">
+                        ★★★★★
+                    </div>
+                    <span class="text-secondary">120 reviews</span>
+                </div>
+
+                <!-- Color Dots -->
+                <p class="fw-semibold mb-1">Warna:</p>
+                <div class="color-dots">
+                    <span class="color-dot" style="background:#ff69b4"></span>
+                    <span class="color-dot" style="background:#add8e6"></span>
+                    <span class="color-dot" style="background:#fafad2"></span>
+                </div>
+
+                <!-- Add to Cart -->
+                <button class="btn-whatsapp" onclick="window.location.href='https://wa.me/62852313149610'">
+                    <i class="bi bi-whatsapp"></i>
+                    Kirim ke WhatsApp
+                </button>
+
+                <!-- Divider -->
+                <hr class="my-4">
+                <!-- FEATURES -->
+                <h5 class="fw-bold mb-2">Features</h5>
+                <p class="text-secondary">
+                    Terbuat dari manik-manik berkualitas tinggi yang kuat dan tidak mudah putus.
+                    Cocok digunakan untuk HP, kamera, atau aksesoris lainnya.
+                </p>
+
+                <hr>
+
+                <!-- SHIPPING -->
+                <h5 class="fw-bold mb-2">Shipping</h5>
+                <p class="text-secondary">
+                    Pengiriman 1–2 hari setelah pemesanan. Tersedia pengiriman ekspres & reguler.
+                </p>
+
+            </div>
+        </div>
+
+    </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+
+        reveals.forEach(el => {
+            const windowHeight = window.innerHeight;
+            const elementTop = el.getBoundingClientRect().top;
+            const visiblePoint = 120;
+
+            if (elementTop < windowHeight - visiblePoint) {
+                el.classList.add("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+</script>
+
+</html>

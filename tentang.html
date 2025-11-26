@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tentang Penjual | Kael's Handmade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="tentang.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar container rounded-5 mt-4 navbar-expand-lg fixed-top">
+    <a class="navbar-brand fw-bold" href="index.html">Kael's Handmade</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto me-3 fw-semibold">
+            <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
+            <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+            <li class="nav-item"><a class="nav-link fs-sm-20 active" href="tentang.html">Tentang Penjual</a></li>
+        </ul>
+        <a href="produk.html" class="btn-order">Order Sekarang</a>
+    </div>
+</nav>
+
+<!-- OWNER PHOTO -->
+<section class="container text-center reveal">
+    <div class="owner-wrapper">
+        <img 
+            src="https://i.pinimg.com/1200x/1f/25/d5/1f25d575b7dad11e30fe4c6b90feffa8.jpg"
+            alt="Owner Kael's Handmade"
+            class="owner-photo"
+        >
+        <div class="owner-caption">
+            owner kael's handmade
+        </div>
+    </div>
+</section>
+
+
+<!-- ABOUT -->
+<section class="container reveal">
+    <div class="about-box">
+        <h2 class="mb-3">Tentang Kael’s Handmade</h2>
+        <p>
+            Kael’s Handmade adalah usaha kecil yang berfokus pada pembuatan
+            aksesoris handmade seperti strap phone, keychain, dan custom nama
+            dengan sentuhan personal.
+        </p>
+        <p>
+            Setiap produk dibuat secara manual dengan perhatian pada detail,
+            kualitas, dan kenyamanan penggunaan.
+        </p>
+    </div>
+
+    <div class="about-box mt-4">
+        Kami percaya bahwa aksesoris bukan hanya pelengkap,
+        tetapi bentuk ekspresi diri dan hadiah penuh makna.
+    </div>
+</section>
+
+
+<!-- COMMITMENT -->
+<section class="container text-center reveal">
+    <h3 class="mb-4">Komitmen Kami</h3>
+    <div class="row g-4">
+        <div class="col-lg-4 reveal delay-1">
+            <div class="about-card">
+                <div class="about-icon"><i class="bi bi-award"></i></div>
+                <h5>Kualitas Terbaik</h5>
+                <p>Bahan dipilih dengan teliti untuk hasil yang awet.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 reveal delay-2">
+            <div class="about-card">
+                <div class="about-icon"><i class="bi bi-heart"></i></div>
+                <h5>Personal & Unik</h5>
+                <p>Setiap produk menyesuaikan karakter pemiliknya.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 reveal delay-3">
+            <div class="about-card">
+                <div class="about-icon"><i class="bi bi-chat-dots"></i></div>
+                <h5>Respons Cepat</h5>
+                <p>Siap konsultasi dan custom via WhatsApp.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact-section container reveal">
+    <div class="row g-4 align-items-center">
+
+        <!-- FORM -->
+        <div class="col-lg-6 reveal delay-1">
+            <h2>Hubungi Kami</h2>
+            <p>
+                Isi form di bawah ini, pesan akan langsung diteruskan ke WhatsApp kami.
+            </p>
+
+            <form id="waForm">
+                <input type="text" id="name" class="form-control mb-3" placeholder="Nama Kamu" required>
+                <input type="text" id="topic" class="form-control mb-3" placeholder="Topik / Produk" required>
+                <textarea id="message" class="form-control mb-3" rows="4" placeholder="Pesan"></textarea>
+
+                <button type="submit" class="btn-whatsapp">
+                    <i class="bi bi-whatsapp"></i>
+                    Kirim ke WhatsApp
+                </button>
+            </form>
+        </div>
+
+        <!-- MAP -->
+        <div class="col-lg-6 reveal delay-2">
+            <div class="map-wrapper">
+                <iframe
+                    src="https://www.google.com/maps?q=Jember,%20Jawa%20Timur&output=embed"
+                    width="100%" height="350"
+                    style="border:0;" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- BRAND -->
+            <div class="col-lg-4 col-md-6">
+                <h5 class="footer-title">Kael’s Handmade</h5>
+                <p class="footer-text">
+                    Aksesoris handmade personal dan unik.
+                    Dibuat dengan sepenuh hati untuk menemani setiap cerita kamu.
+                </p>
+            </div>
+
+            <!-- MENU -->
+            <div class="col-lg-2 col-md-6">
+                <h6>Menu</h6>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Produk</a></li>
+                    <li><a href="#">Tentang Penjual</a></li>
+                </ul>
+            </div>
+
+            <!-- SOSIAL MEDIA -->
+            <div class="col-lg-3 col-md-6">
+                <h6>Ikuti Kami</h6>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom mt-4">
+            © 2025 Kael’s Handmade. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function revealOnScroll() {
+        document.querySelectorAll(".reveal").forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight - 120) {
+                el.classList.add("active");
+            }
+        });
+    }
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+
+    document.getElementById("waForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const topic = document.getElementById("topic").value;
+    const message = document.getElementById("message").value;
+
+    const phone = "6285231314961"; // GANTI NO WA
+
+    const text =
+`Halo Kael’s Handmade 👋
+
+Nama: ${name}
+Topik: ${topic}
+Pesan:
+${message}`;
+
+    const url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(text);
+    window.open(url, "_blank");
+});
+</script>
+
+</body>
+</html>
