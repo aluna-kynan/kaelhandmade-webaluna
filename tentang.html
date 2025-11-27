@@ -142,6 +142,7 @@
                 <form id="waForm">
                     <input type="text" id="name" class="form-control mb-3" placeholder="Nama Kamu" required>
                     <input type="text" id="topic" class="form-control mb-3" placeholder="Topik / Produk" required>
+                    <input type="text" id="phone" class="form-control mb-3" placeholder="No. WhatsApp" required>
                     <textarea id="message" class="form-control mb-3" rows="4" placeholder="Pesan"></textarea>
 
                     <button type="submit" class="btn-whatsapp">
@@ -207,6 +208,12 @@
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script>
+/*************  ✨ Windsurf Command ⭐  *************/
+/**
+ * Adds the "active" class to all elements with the class "reveal" that are
+ * visible in the viewport.
+ */
+/*******  537f5472-b73c-4b35-ba48-7b68473c01c4  *******/
         function revealOnScroll() {
             document.querySelectorAll(".reveal").forEach(el => {
                 if (el.getBoundingClientRect().top < window.innerHeight - 120) {
@@ -246,6 +253,7 @@ ${ulasan}`;
             const name = document.getElementById("name").value;
             const topic = document.getElementById("topic").value;
             const message = document.getElementById("message").value;
+            const phone_num = document.getElementById("phone").value;
 
             const phone = "6285231314961"; // GANTI NO WA
 
@@ -254,6 +262,7 @@ ${ulasan}`;
 
 Nama: ${name}
 Topik: ${topic}
+No. WhatsApp: ${phone_num}
 Pesan:
 ${message}`;
 
